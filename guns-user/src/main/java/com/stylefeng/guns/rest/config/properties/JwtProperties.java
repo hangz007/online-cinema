@@ -25,16 +25,6 @@ public class JwtProperties {
 
     private String md5Key = "randomKey";
 
-    private String igoreUrl = "";
-
-    public String getIgoreUrl() {
-        return igoreUrl;
-    }
-
-    public void setIgoreUrl(String igoreUrl) {
-        this.igoreUrl = igoreUrl;
-    }
-
     public static String getJwtPrefix() {
         return JWT_PREFIX;
     }
