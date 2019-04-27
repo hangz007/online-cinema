@@ -27,6 +27,11 @@ mybatis-plus:
 #    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl #打印sql语句,调试用
 
 spring:
+  application:
+    name : meeting-gateway
+  dubbo:
+    server: true
+    registry: zookeeper://localhost:2181
   datasource:
       url: jdbc:mysql://localhost:3306/online_cinema?autoReconnect=true&useUnicode=true&characterEncoding=utf8&serverTimezone=GMT%2B8
       username: root
@@ -38,3 +43,6 @@ logging:
   level.com.stylefeng: debug
   path: logs/
   file: guns-rest.log
+
+
+
